@@ -1,0 +1,77 @@
+.searchbar{
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  z-index: 99;
+}
+.searchbar input{
+  width: 600px;
+  padding: 10px 20px;
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: white;
+ 
+}
+.searchbar .searchinput{
+  position: absolute;
+}
+.searchbar .sale{
+  display: grid;
+ position: absolute;
+ top: 46px;
+ right: 0px;
+ width: 940px;
+ max-height: 500px;
+ overflow-y: auto;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border: 1px solid black;
+}
+.searchbar  .products{
+  height: 20px
+}
+@media only screen and (max-width: 1268px) {
+  .searchbar .sale{
+   width: 700px;
+  
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .searchbar{
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    z-index: 99;
+  }
+  .searchbar .sale{
+    width: 500px;
+   
+   }
+   .searchbar input{
+    width: 500px;
+   
+  }
+}
+@media only screen and (max-width: 586px) {
+  
+  .searchbar .sale{
+    width: 350px;
+   
+   }
+   .searchbar input{
+    width: 350px;
+   
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .searchbar .sale{
+    width: 250px;
+   
+   }
+   .searchbar input{
+    width: 250px;
+   
+  }
+}

@@ -1,0 +1,83 @@
+.mobile-nav-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 70%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: white;
+  z-index: 99;
+  height:100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+}
+.mobile-nav-menu ul{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.mobile-nav-menu ul li .problem{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding:10px 10px;
+}
+
+.mobile-nav-menu ul li a{
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 14px;
+}
+.line{
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+
+.mobile-nav-menu ul li .dropdown{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 13px;
+  color: #777;
+ padding: 0px 40px;
+  
+}
+
+.mobile-nav-menu ul li .dropdown li a{
+  text-transform: capitalize;
+  font-size: 14px;
+ 
+}
+.mobile-nav-menu  ul  .dropdownsub{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0px 20px;
+ 
+ 
+}
+
+.mobile-nav-menu .login{
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+}
+
+.mobile-nav-menu .login p{
+  font-size: 16px;
+  text-transform:uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  padding: 10px 10px;
+ 
+}
+
+@media only screen and (min-width: 900px) {
+  .mobile-nav-menu {
+   display: none;
+  
+  }
+  .navbar{
+    visibility: visible;
+  }
+}

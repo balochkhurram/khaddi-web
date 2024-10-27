@@ -1,0 +1,107 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  z-index: 1; 
+  background-color: white;
+}
+
+.navbar .logo img{
+  width: 100%;
+  height: 100%;
+ 
+}
+.navbar .navlinks ul{
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+.navbar .navlinks li a{
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+
+
+}
+.navbar .social-icons ul {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.navbar .social-icons ul li a{
+  font-size: 18px;
+}
+.navbar .navlinks ul li .droplist{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+ position: absolute;
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ background-color: white;
+ padding: 10px 20px;
+ top: 30px;
+ width: 800px;
+ left: -70px;
+ visibility:hidden;
+ opacity: 0;
+ transition: all 0.3s ease-in-out;
+ z-index: 99;
+ 
+}
+
+
+
+.navbar .navlinks ul li .droplist h2{
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.navbar .navlinks ul li .droplist h3{
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 40px;
+}
+.navbar .navlinks ul li .droplist p{
+  color: #777;
+  line-height: 40px;
+  font-size: 15px;
+  
+}
+
+
+.navbar .navlinks ul li:hover .droplist{
+ visibility: visible;
+ opacity: 1;
+
+ 
+}
+.navbar .menu{
+  display: none;
+}
+.social-icons li:nth-child(4){
+  position: relative;
+  font-size: 18px;
+  
+}
+
+
+@media only screen and (max-width: 900px) {
+ .navbar .navlinks ul{
+  display: none;
+ }
+ .navbar .logo{
+  margin: 0 auto;
+ }
+ .navbar .social-icons ul li:nth-child(1){
+  display: none;
+ }
+ .navbar .social-icons ul li:nth-child(2){
+  display: none;
+ }
+ .navbar .menu{
+  display: block;
+  cursor: pointer;
+
+ }
+}

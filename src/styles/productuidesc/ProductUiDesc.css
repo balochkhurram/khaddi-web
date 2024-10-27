@@ -1,0 +1,319 @@
+.div .links{
+  display: flex;
+ gap: 7px;
+ font-size: 19px;
+ padding: 10px;
+ text-transform: capitalize;
+}
+.div .links a:nth-child(5){
+  font-weight: 600;
+}
+.carddesc{
+ display:grid;
+ grid-template-columns: repeat(2,1fr);
+ justify-items: flex-start;
+}
+.carddesc .mainslider{
+  display: flex;
+}
+.carddesc .sliderimagedesc {
+  width: 12%;
+ height: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  
+}
+
+
+.carddesc .sliderimagedesc img{
+  
+  width: 100%;
+  height: 100%;
+}
+
+.carddesc .images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carddesc .detailcard{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.carddesc  .detailcard .card-body{
+  display: flex;
+  flex-direction: column;
+
+}
+.carddesc .detailcard .card-body h2{
+ font-size: 20px;
+ font-weight: bold;
+}
+.carddesc .detailcard .card-body .first{
+  font-size: 17px;
+  text-transform: capitalize;
+  color:#777;
+}
+.carddesc .detailcard .card-body p:last-child{
+  font-family: 500;
+}
+
+.carddesc .detailcard .stock-In{
+  display: flex;
+  flex-direction: column;
+}
+.carddesc .detailcard .stock-In .stock{
+  display: flex;
+  gap: 4px;
+}
+.carddesc .detailcard .stock-In .stock p:first-child{
+  color: #777;
+}
+.carddesc .detailcard .stock-In .stock p:last-child{
+  color: #02a502;
+  text-transform: capitalize;
+}
+.carddesc .detailcard .stock-In .sku{
+  text-transform: uppercase;
+  display: flex;
+  gap: 3px;
+  color: #777;
+}
+.carddesc .detailcard .colors{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.carddesc .detailcard .colors .colr .textcolor{
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+ 
+.carddesc .detailcard .colors .colr p:last-child{
+  width: 30px;
+  height: 30px;
+  font-size: 0px;
+  border: 1px solid black;
+
+  
+ 
+  
+}
+.carddesc .detailcard .size{
+  display: flex;
+  flex-direction: row;
+}
+.carddesc .detailcard .size  p{
+ 
+ border: 1px solid #777;
+ padding: 7px 20px;
+ text-transform: capitalize;
+}
+.carddesc .detailcard  .size .size-cloth{
+  display: flex;
+}
+
+
+.carddesc .detailcard .mainbtn{
+  display: flex;
+  gap: 15px;
+  
+}
+.carddesc .detailcard .mainbtn .btn{
+  display: flex;
+  
+  
+}
+
+.carddesc .detailcard .mainbtn .btn  p{
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 1px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.carddesc .detailcard .mainbtn .btn h3{
+  border: 1px solid #777;
+  padding: 3px 10px;
+  text-align: center;
+}
+
+.carddesc .detailcard .mainbtn .addtocard{
+  width: auto;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 5px 45px;
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.carddesc .detailcard .mainbtn .addtocard:hover{
+  background-color: white;
+  color: black ;
+  cursor: pointer;
+}
+.carddesc .detailcard .detaildesc{
+  display: flex;
+  flex-direction: column;
+  padding-top:15px;
+  gap: 5px;
+ border-top: 1px solid #777 ;
+}
+.carddesc .detailcard .details {
+   text-transform:capitalize;
+}
+.carddesc .detailcard .details h2{
+  
+  
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.carddesc .detailcard .detail h2:active{
+  color: black;
+}
+.carddesc .detailcard .details .detail {
+  display: flex;
+  line-height: 35px;
+  gap:5px;
+  font-size: 16px;
+}
+.carddesc .detailcard .details .heading{
+  display: flex;
+  gap: 100px;
+  cursor: pointer;
+}
+.carddesc .detailcard .details .detail p:first-child{
+  font-size: 16px;
+  font-weight: 600;
+}
+.carddesc .detailcard .details .detail p:last-child{
+  color: black;
+  font-size: 16px;
+}
+.carddesc table{
+ 
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid black;
+  text-align: center;
+  border:1;
+
+}
+.carddesc th{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+ padding: 7px 35px;
+ border-collapse: collapse;
+  
+}
+.carddesc tr{
+  border: 1px solid  #777;
+}
+.carddesc td{
+  border: 1px solid #777;
+  padding:10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .carddesc .mainslider{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .carddesc .sliderimagedesc {
+
+    width: 21%;
+   height: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+
+
+@media only screen and (max-width: 860px) {
+  .carddesc{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+  
+    
+   
+   }
+   .div .links{
+    display: flex;
+   gap: 7px;
+   font-size: 12px;
+   padding: 10px;
+   text-transform: capitalize;
+  }
+}
+@media only screen and (max-width: 480px) {
+  
+   .carddesc .detailcard .mainbtn{
+    flex-wrap: wrap;
+    
+  }
+  .carddesc table {
+    width: 100%; /* Ensure the table takes up full width */
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .carddesc th, .carddesc td {
+    padding: 8px; /* Reduce padding */
+  }
+   
+  .div .links{
+    display: flex;
+   gap: 7px;
+   font-size: 8px;
+   padding: 7px;
+   text-transform: capitalize;
+  }
+  
+}
+
+
+@media only screen and (max-width: 353px) {
+  .carddesc{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+  
+
+   }
+   .carddesc .detailcard .mainbtn{
+    flex-wrap: wrap;
+    
+  }
+  .carddesc table {
+    width: 100%; /* Ensure the table takes up full width */
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .carddesc th, .carddesc td {
+    padding: 8px; /* Reduce padding */
+  }
+  .carddesc .detailcard .size  p{
+ 
+    border: 1px solid #777;
+    padding: 7px 10px;
+    text-transform: capitalize;
+   }
+   
+  
+}
+
+
+
+
+
+
+

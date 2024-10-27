@@ -1,0 +1,143 @@
+.sale {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.sale .cards {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    
+}
+
+.sale .cards .image img:first-child {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.2s ease;
+    position: relative;
+   
+}
+.sale .cards .image .inner{
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: none;
+ transform: all 0.2s ease ;
+}
+.sale .cards .image:hover .inner{
+display: block;
+cursor: pointer;
+}
+
+
+.sale .cards .image {
+    position: relative;
+}
+
+
+.sale .cards .image .buttons .firstchild{
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    font-size: 10px;
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 3px 7px; /* Adjusted padding for better size */
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+    cursor:default;
+
+}
+.sale .cards .image .buttons .lastchild{
+    position: absolute;
+    top:10px;
+    left:10px; 
+    font-size: 10px;
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 3px 7px; /* Adjusted padding for better size */
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+    cursor:default;
+}
+.sale .cards .image button:last-child{
+   
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 7px 0px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+.sale .cards .cardbody {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px 10px;
+}
+
+.sale .cards .cardbody h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.sale .cards .cardbody .description{
+    font-size: 13px;
+}
+.sale .cards .cardbody p:last-child{
+    color: #777;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .sale {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .sale {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sale .cards button:last-child {
+        top: 5px;
+       
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .sale .cards img {
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .sale {
+        grid-template-columns: 1fr ;
+    }
+
+    .sale .cards button:last-child {
+        top: 5px;
+       
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .sale .cards img {
+        height: auto;
+    }
+}

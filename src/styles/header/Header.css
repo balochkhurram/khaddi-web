@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e85d04;
+    font-size: 13px;
+    padding: 10px 40px;
+    color: white;
+    text-transform: capitalize;
+    
+}
+
+
+.header a {
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .header{
+        display: none;
+    }
+}

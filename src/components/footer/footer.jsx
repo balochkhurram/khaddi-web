@@ -83,10 +83,10 @@ function Footer() {
         <div className="card-footer">
         <p>our social</p>
         <div className="cardsocial">
-          <p><a href=""><img src="./AssestImage/footer/facebook.png" alt="facebook" /></a></p>
-          <p><a href=""><img src="./AssestImage/footer/instagram.webp" alt="instagram" /></a></p>
-          <p><a href=""><img src="./AssestImage/footer/tiktiol.png" alt="tiktok" /></a></p>
-          <p><a href=""><img src="./AssestImage/footer/youtube1.png" alt="youtube" /></a></p>
+          <p><a href=""><img src="/AssestImage/footer/facebook.png" alt="facebook" /></a></p>
+          <p><a href=""><img src="/AssestImage/footer/instagram.webp" alt="instagram" /></a></p>
+          <p><a href=""><img src="/AssestImage/footer/tiktiol.png" alt="tiktok" /></a></p>
+          <p><a href=""><img src="/AssestImage/footer/youtube1.png" alt="youtube" /></a></p>
          
         </div>
         <p>get the latest news</p>
@@ -101,14 +101,14 @@ function Footer() {
       <div className="footer-last">
         <div className="image">
           <p>100% safe checkout</p>
-          <img src="./AssestImage/footer/pay (1).webp" alt="" />
+          <img src="/AssestImage/footer/pay (1).webp" alt="" />
         </div>
         <div className="image">
           <p>Secured by</p>
-          <img src="./AssestImage/footer/secured.gif" alt="" />
+          <img src="/AssestImage/footer/secured.gif" alt="" />
         </div>
         <div className="logo">
-          <img src="./AssestImage/footer/khaadi-Logo.png" alt="" />
+          <img src="/AssestImage/footer/khaadi-Logo.png" alt="" />
         </div>
         <p>Copyright © 2024 Weaves Corporation Limited (Formerly Khaadi Corporation Limited). All Rights Reserved.</p>
       </div>

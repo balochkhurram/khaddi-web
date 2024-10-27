@@ -27,8 +27,8 @@ function Slider() {
     modules={[Autoplay, Pagination, Navigation]}
     className="mySwiper"
   >
-    <SwiperSlide><img src="/AssestImage/Slider/Banner1.webp" alt="" /></SwiperSlide>
-    <SwiperSlide><img src="/AssestImage/Slider/Banner2.jpg" alt="" /></SwiperSlide>
+    <SwiperSlide><img src="/AssestImage/Slider/banner1.webp" alt="" /></SwiperSlide>
+    <SwiperSlide><img src="/AssestImage/Slider/banner2.jpg" alt="" /></SwiperSlide>
     <SwiperSlide><img src="/AssestImage/Slider/Banner3.webp" alt="" /></SwiperSlide>
     <SwiperSlide><img src="/AssestImage/Slider/Banner4.webp" alt="" /></SwiperSlide>
     

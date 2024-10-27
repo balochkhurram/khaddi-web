@@ -6,8 +6,8 @@ import Section2 from '../components/section/Section2'
 function Home() {
   return(
     <div className="div">
-       <Slider/>
-       
+       {/* <Slider/>
+        */}
        <Banner/>
        {/* <Section2/> */}
        
